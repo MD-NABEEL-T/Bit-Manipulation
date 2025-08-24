@@ -6,6 +6,7 @@ public class clearBit
         // for 0 and with not used //refer clear operation concept
         // for 1 or //refer set operation concept 
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter operation (1 = set, 0 = clear):");
         int operation = sc.nextInt();
         int n= 5;//0101 =>0111= 7
         int pos =1;
@@ -17,7 +18,8 @@ public class clearBit
         int newNumber = bitMask | n;
         System.out.println(newNumber);
     }
-    else{
+    else
+    {
         // clear
         int newBitMask = ~(bitMask);
         int newNumber = newBitMask & n;
